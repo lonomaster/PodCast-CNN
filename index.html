@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<title>PodCast CNN</title>
+
+	<link type="text/css" rel="stylesheet" href="css/podcast.css" />
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="https://www.google.com/jsapi"></script>
+	<script>
+		google.load("feeds", "1"); //Load Google Ajax Feed API (version 1)
+	</script>
+	<script src="js/jquery.jcarousel.min.js"></script>
+	<script src="js/mustache.min.js"></script>
+	<script type="text/javascript">
+		var player;
+		var URL_RSS = 'http://rss.cnn.com/services/podcasting/ac360/rss.xml';
+	    var NUM_ENTRIES = 25;
+
+		$(document).ready(function(){
+	
+			player = new player();
+			player.init();
+	
+		});
+	</script>
+	<script src="js/function.js"></script>
+	
+
+</head>
+<body>
+
+	<div id="feeddiv"></div>
+	
+	<div id="wrapper">
+	
+		<div id="content">
+		
+			<header id="header">
+		  		<hgroup>
+		    		<h1 id="podcast-title" class="header-title ellipsis"></h1>
+		    		<h2 id="podcast-description" class="header-title ellipsis"></h2>
+		  		</hgroup>
+			</header>
+			
+			<section id="carousel-wrapper" class="main-section-wrapper">
+			
+				<div class="carousel-btn-wrapper">
+					<div id="prev-btn" class="jcarousel-prev carousel-btn-content">
+						<div class="carousel-btn">
+							<img src="img/up.png" />
+						</div>
+					</div>
+				</div>
+				
+				<div id="carousel" class="jcarousel">
+	    			<ul id="carousel-list">
+	    			</ul>
+				</div>
+	    		
+	    		<div class="carousel-btn-wrapper carousel-btn-wrapper-down">
+		    		<div id="next-btn" class="jcarousel-next carousel-btn-content">
+		    			<div class="carousel-btn">
+		    				<img src="img/down.png" />
+		    			</div>
+		    		</div>
+				</div>
+				
+			</section>
+			
+			<section id="player-wrapper" class="main-section-wrapper">
+			
+				<div id="player-content">
+				
+					<video width="546" height="420" controls id="video">
+						Your browser does not support the video tag.
+					</video>
+				
+				</div>
+				
+				<div id="current-clip-wrapper">
+					<p id="current-clip"></p>
+				</div>
+			
+			</section>
+			
+			<footer></footer>
+		
+		</div>
+		
+	</div>
+
+	
+</body>
+</html>

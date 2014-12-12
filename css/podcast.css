@@ -1,0 +1,193 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background: url('../img/bg.jpg');
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*wrapper*/
+#wrapper{
+	width: 1280px;
+	height: 720px;
+	margin: 20px auto;
+/*Fondo*/
+}
+
+#content{
+	padding: 30px;
+
+}
+
+
+
+/* header */
+#header{
+	margin-bottom: 30px;
+}
+#header .header-title{
+	padding: 10px 0;
+	color:#F5F5F5;
+}
+
+#podcast-title{
+	font-size: 40px;	
+}
+
+
+#podcast-description{
+	font-size: 25px;
+	font-style: italic;	
+}
+
+
+
+/* video player */
+#player-wrapper{
+	float: right;
+}
+
+#player-content{
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 5px;
+	width: 546px;
+	height: 420px;
+	padding: 10px;
+}
+
+#current-clip-wrapper{
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 5px;
+	margin-top:10px;
+	width: 566px;
+	color:#F5F5F5;
+}
+
+#current-clip{
+	max-height:50px;
+	min-height:32px;
+	padding: 5px;
+	overflow: hidden;
+}
+
+
+
+/* carousel */
+#carousel-wrapper{
+	float: left;	
+	width: 600px;
+	margin-left: 20px;
+	margin-top: 15px;
+	height: 490px;
+}
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.jcarousel ul {
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#carousel-list li{
+	height: 70px;
+	border: solid 2px transparent;
+	border-radius: 5px;
+	margin-top:5px;
+}
+
+#carousel-list li.selected{
+	background-color: rgba(87, 166, 255, 0.4);
+}
+
+#carousel-list li div{
+	height: 40px;
+	border-radius: 5px;
+	vertical-align: middle;
+	padding:15px;
+	color:#F5F5F5;
+	background-color: rgba(255, 255, 255, 0.2);
+
+}
+
+#carousel-list p.item-title{
+	font-size: 20px;	
+}
+
+#carousel-list p.item-date{
+	font-style: italic;	
+}
+
+.carousel-btn-wrapper{
+	width: 100%;
+	background-color: transparent;
+}
+
+.carousel-btn-content{
+	border: solid 2px transparent;
+	border-radius: 5px;
+}
+
+.carousel-btn-content.selected{
+	background-color: rgba(87, 166, 255, 0.4);
+}
+
+.carousel-btn{
+	border-radius: 5px;
+	padding: 2px;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.carousel-btn img{
+	width: 32px;
+	height: 32px;
+	margin: 0 auto;
+	display: block;
+}
+
+
+
